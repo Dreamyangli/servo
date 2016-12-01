@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import RPi.GPIO as GPIO
 import time
 
@@ -16,7 +18,6 @@ try:
 	while True:
 		inp = input("degrees:")
 		if inp == 'q':
-			print("NI")
 			break
 		degree = int(inp)
 		if degree > 180 or degree < 0:
